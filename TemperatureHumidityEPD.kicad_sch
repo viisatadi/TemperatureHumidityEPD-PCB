@@ -10,7 +10,7 @@
 
   (lib_symbols
     (symbol "ADI_Power:MAX20343H" (in_bom yes) (on_board yes)
-      (property "Reference" "U1" (at 2.1941 -14.2931 0)
+      (property "Reference" "U3" (at 2.1941 -14.2931 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Value" "MAX20343H" (at 2.54 -16.51 0)
@@ -35,14 +35,6 @@
         )
       )
       (symbol "MAX20343H_1_1"
-        (pin input line (at 2.54 15.24 270) (length 2.54)
-          (name "HVLX" (effects (font (size 1.27 1.27))))
-          (number "" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -2.54 15.24 270) (length 2.54)
-          (name "LVLX" (effects (font (size 1.27 1.27))))
-          (number "" (effects (font (size 1.27 1.27))))
-        )
         (pin input line (at -12.7 -10.16 0) (length 2.54)
           (name "CAP" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -82,6 +74,14 @@
         (pin power_out line (at 12.7 7.62 180) (length 2.54)
           (name "OUT" (effects (font (size 1.27 1.27))))
           (number "7" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 2.54 15.24 270) (length 2.54)
+          (name "HVLX" (effects (font (size 1.27 1.27))))
+          (number "8" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -2.54 15.24 270) (length 2.54)
+          (name "LVLX" (effects (font (size 1.27 1.27))))
+          (number "9" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -348,16 +348,22 @@
       )
     )
     (symbol "Connector_Generic:Conn_02x05_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 1.27 7.62 0)
+      (property "Reference" "J2" (at 1.27 10.4943 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_02x05_Odd_Even" (at 1.27 -7.62 0)
+      (property "Value" "FTSH-105-01-L-DV-K" (at 1.27 8.0701 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (at 0 0 0)
+      (property "Footprint" "Connectors_Custom:SAMTEC_FTSH-105-01-L-DV-K" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "~" (at 0 0 0)
+      (property "Datasheet" "https://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-x-xx-mkt.pdf" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Description" "connector, 10-pin, 2x5, 0.5mm pitch, polarized, SMT" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Part Number" "FTSH-105-01-L-DV-K" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "connector" (at 0 0 0)
@@ -416,43 +422,43 @@
         )
         (pin passive line (at -5.08 5.08 0) (length 3.81)
           (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
+          (number "01" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 5.08 180) (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "02" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 2.54 0) (length 3.81)
+          (name "Pin_3" (effects (font (size 1.27 1.27))))
+          (number "03" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 2.54 180) (length 3.81)
+          (name "Pin_4" (effects (font (size 1.27 1.27))))
+          (number "04" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 0 0) (length 3.81)
+          (name "Pin_5" (effects (font (size 1.27 1.27))))
+          (number "05" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 0 180) (length 3.81)
+          (name "Pin_6" (effects (font (size 1.27 1.27))))
+          (number "06" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_7" (effects (font (size 1.27 1.27))))
+          (number "07" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 -2.54 180) (length 3.81)
+          (name "Pin_8" (effects (font (size 1.27 1.27))))
+          (number "08" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+          (name "Pin_9" (effects (font (size 1.27 1.27))))
+          (number "09" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 7.62 -5.08 180) (length 3.81)
           (name "Pin_10" (effects (font (size 1.27 1.27))))
           (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 5.08 180) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 2.54 180) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 0 180) (length 3.81)
-          (name "Pin_6" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_7" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 -2.54 180) (length 3.81)
-          (name "Pin_8" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
-          (name "Pin_9" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -975,6 +981,60 @@
         (pin power_in line (at 0 25.4 270) (length 3.81)
           (name "VDD" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (at 1.27 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "SW_Push" (at 0 -1.524 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SW_Push_0_1"
+        (circle (center -2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 0 180) (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -2192,6 +2252,10 @@
     (stroke (width 0) (type default))
     (uuid 45973751-ca32-4f06-8949-8a1d740158cb)
   )
+  (wire (pts (xy 142.24 100.965) (xy 140.335 100.965))
+    (stroke (width 0) (type default))
+    (uuid 48273cd3-7148-402d-ba66-3db290fae14e)
+  )
   (wire (pts (xy 260.35 102.235) (xy 271.78 102.235))
     (stroke (width 0) (type default))
     (uuid 485e8b2f-a11c-477a-8746-2a983957e764)
@@ -2381,9 +2445,17 @@
     (stroke (width 0) (type default))
     (uuid 6f34fdaa-6374-428c-a58a-7e7a7feba83d)
   )
+  (wire (pts (xy 142.24 99.06) (xy 142.24 100.965))
+    (stroke (width 0) (type default))
+    (uuid 711e2a18-ed55-446c-8a7e-a1cc9d4b37ec)
+  )
   (wire (pts (xy 217.805 85.725) (xy 222.885 85.725))
     (stroke (width 0) (type default))
     (uuid 723a70ce-72cc-436f-acfa-618d6beca2eb)
+  )
+  (wire (pts (xy 120.015 111.125) (xy 120.015 113.03))
+    (stroke (width 0) (type default))
+    (uuid 7419dfc7-3537-4e4c-968c-c59f1016bbae)
   )
   (wire (pts (xy 124.46 60.96) (xy 124.46 62.865))
     (stroke (width 0) (type default))
@@ -2460,6 +2532,10 @@
   (wire (pts (xy 125.73 138.43) (xy 142.24 138.43))
     (stroke (width 0) (type default))
     (uuid 8a3ee799-6687-4a71-84ad-828c152b4406)
+  )
+  (wire (pts (xy 126.365 111.125) (xy 120.015 111.125))
+    (stroke (width 0) (type default))
+    (uuid 8bf8e462-e52d-4af4-83a3-3b6be9372d50)
   )
   (wire (pts (xy 109.22 179.705) (xy 109.22 180.975))
     (stroke (width 0) (type default))
@@ -2825,9 +2901,17 @@
     (stroke (width 0) (type default))
     (uuid e8049897-cfef-4865-a1a2-346866afdf24)
   )
+  (wire (pts (xy 130.175 100.965) (xy 126.365 100.965))
+    (stroke (width 0) (type default))
+    (uuid e944fa23-a3dd-4143-b642-a2e09adc402c)
+  )
   (wire (pts (xy 223.52 135.255) (xy 271.78 135.255))
     (stroke (width 0) (type default))
     (uuid ea89b963-d625-4b87-834d-d46ac1746177)
+  )
+  (wire (pts (xy 142.24 90.17) (xy 142.24 91.44))
+    (stroke (width 0) (type default))
+    (uuid eb9fb9b5-3d98-4aac-a59c-1ee8df7e0b2c)
   )
   (wire (pts (xy 48.26 143.51) (xy 48.26 139.7))
     (stroke (width 0) (type default))
@@ -2861,7 +2945,7 @@
     (stroke (width 0) (type default))
     (uuid f5261eac-932e-4730-bcaf-ae1310a6ceea)
   )
-  (wire (pts (xy 100.33 113.03) (xy 115.57 113.03))
+  (wire (pts (xy 100.33 113.03) (xy 120.015 113.03))
     (stroke (width 0) (type default))
     (uuid f589dd98-3776-4ac2-a99b-177324cabfd1)
   )
@@ -2905,6 +2989,10 @@
     (stroke (width 0) (type default))
     (uuid fc2d4555-7495-4b98-93ef-f0a981f2f8f4)
   )
+  (wire (pts (xy 126.365 100.965) (xy 126.365 111.125))
+    (stroke (width 0) (type default))
+    (uuid fcbd352b-df6b-4c42-8132-07cda70aaf47)
+  )
   (wire (pts (xy 135.255 22.225) (xy 135.255 24.765))
     (stroke (width 0) (type default))
     (uuid fceedad5-c181-42bb-8bed-5021f9700407)
@@ -2946,10 +3034,20 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0409427c-5201-4070-92ad-6e5bd7451d3a)
   )
+  (text "(note that the bottom pkg \npaddle is intentionally floating)"
+    (at 53.34 82.55 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 1f787787-8a77-4116-a3f3-63b62ca659ab)
+  )
   (text "Open-Source Temperature and Humidity Sensor with ePaper Display"
     (at 265.43 190.5 0)
     (effects (font (face "KiCad Font") (size 1.5 1.5) (thickness 0.254) bold italic) (justify right bottom))
     (uuid 26e74c00-1138-4ce8-a4c1-23d76e019437)
+  )
+  (text "Place all power decoupling caps near their respective ICs."
+    (at 178.435 169.545 0)
+    (effects (font (face "KiCad Font") (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
+    (uuid 2e8d3ea2-d526-4e7d-b203-864091d5549e)
   )
   (text "display internal\ntemp sensor" (at 160.655 116.205 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2970,6 +3068,10 @@
   (text "Waveshare raw display connector" (at 250.825 85.09 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a20ad3c1-94d0-4dc9-8d96-195805bd996f)
+  )
+  (text "M3 holes" (at 163.195 168.91 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid b3e7e457-6d58-412c-9c0a-a1a86e6be7f5)
   )
   (text "SWD Debug" (at 91.44 168.275 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -3136,7 +3238,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8962bf33-2803-492c-b699-8e6800fc7133)
   )
-  (label "VDD" (at 260.35 135.255 0) (fields_autoplaced)
+  (label "EPD_VDD" (at 260.35 135.255 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8f7ba9b3-ae71-4d55-b911-97ae1c3e8ebd)
   )
@@ -3248,7 +3350,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:SI7021") (at 65.405 66.675 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ac857d8)
-    (property "Reference" "U2" (at 65.405 61.595 0)
+    (property "Reference" "U1" (at 65.405 61.595 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SI7021" (at 65.405 63.5 0)
@@ -3275,7 +3377,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "U2") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -3284,7 +3386,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 35.56 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ac858a4)
-    (property "Reference" "R2" (at 37.592 57.15 90)
+    (property "Reference" "R1" (at 37.592 57.15 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 35.56 57.15 90)
@@ -3307,7 +3409,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3348,13 +3450,13 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:Conn_01x02") (at 54.61 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005ac8590e)
-    (property "Reference" "J3" (at 54.61 24.13 0)
+    (property "Reference" "J1" (at 54.61 24.13 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02" (at 54.61 31.75 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" (at 54.61 26.67 0)
+    (property "Footprint" "Connectors_Custom:Pin_Header_Straight_1x02_Pitch2.54mm" (at 54.61 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 54.61 26.67 0)
@@ -3365,7 +3467,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "J3") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -3429,7 +3531,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 35.56 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005aca9ff6)
-    (property "Reference" "#PWR06" (at 35.56 55.88 0)
+    (property "Reference" "#PWR04" (at 35.56 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 35.56 48.514 0)
@@ -3445,7 +3547,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3454,7 +3556,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 92.075 52.705 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acaa016)
-    (property "Reference" "#PWR07" (at 92.075 56.515 0)
+    (property "Reference" "#PWR011" (at 92.075 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 92.075 49.149 0)
@@ -3470,7 +3572,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -3479,7 +3581,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 39.37 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acaa185)
-    (property "Reference" "C4" (at 40.005 26.67 0)
+    (property "Reference" "C1" (at 40.005 26.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 40.005 31.75 0)
@@ -3502,7 +3604,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C4") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -3511,16 +3613,16 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:Conn_01x08") (at 276.86 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acaa270)
-    (property "Reference" "J1" (at 276.86 20.32 0)
+    (property "Reference" "J3" (at 276.86 20.32 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x08" (at 276.86 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" (at 276.86 30.48 0)
+    (property "Footprint" "Connector_JST:JST_PH_S8B-PH-SM4-TB_1x08-1MP_P2.00mm_Horizontal" (at 276.86 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 276.86 30.48 0)
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf" (at 276.86 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid eb271b41-d50e-4511-bfbe-2003abc24e16))
@@ -3534,7 +3636,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "J1") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -3543,7 +3645,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 251.46 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acaa39e)
-    (property "Reference" "#PWR08" (at 251.46 41.91 0)
+    (property "Reference" "#PWR043" (at 251.46 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 251.46 34.544 0)
@@ -3559,7 +3661,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -3568,7 +3670,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 226.695 41.275 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acaa3c4)
-    (property "Reference" "#PWR09" (at 226.695 47.625 0)
+    (property "Reference" "#PWR036" (at 226.695 47.625 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 226.695 45.085 0)
@@ -3584,7 +3686,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -3593,7 +3695,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 98.425 62.865 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acab389)
-    (property "Reference" "#PWR013" (at 98.425 66.675 0)
+    (property "Reference" "#PWR012" (at 98.425 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 98.425 59.309 0)
@@ -3609,7 +3711,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -3618,7 +3720,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 42.545 69.215 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acab3b8)
-    (property "Reference" "#PWR014" (at 42.545 75.565 0)
+    (property "Reference" "#PWR05" (at 42.545 75.565 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 42.545 73.025 0)
@@ -3634,7 +3736,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -3643,7 +3745,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 98.425 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acab7e1)
-    (property "Reference" "C5" (at 99.06 69.215 0)
+    (property "Reference" "C3" (at 99.06 69.215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 99.06 74.295 0)
@@ -3666,7 +3768,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C5") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -3675,7 +3777,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 98.425 78.105 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005acab846)
-    (property "Reference" "#PWR017" (at 98.425 84.455 0)
+    (property "Reference" "#PWR013" (at 98.425 84.455 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 98.425 81.915 0)
@@ -3691,7 +3793,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -3706,7 +3808,7 @@
     (property "Value" "MOUNTHOLE" (at 150.495 172.085 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "KevinLibrary:TH-M3" (at 150.495 175.895 0)
+    (property "Footprint" "Connectors_Custom:TH-M3" (at 150.495 175.895 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (at 150.495 175.895 0)
@@ -3730,7 +3832,7 @@
     (property "Value" "MOUNTHOLE" (at 167.005 172.085 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "KevinLibrary:TH-M3" (at 167.005 175.895 0)
+    (property "Footprint" "Connectors_Custom:TH-M3" (at 167.005 175.895 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (at 167.005 175.895 0)
@@ -3754,7 +3856,7 @@
     (property "Value" "MOUNTHOLE" (at 150.495 183.515 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "KevinLibrary:TH-M3" (at 150.495 187.325 0)
+    (property "Footprint" "Connectors_Custom:TH-M3" (at 150.495 187.325 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (at 150.495 187.325 0)
@@ -3778,7 +3880,7 @@
     (property "Value" "MOUNTHOLE" (at 167.005 183.515 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "KevinLibrary:TH-M3" (at 167.005 187.325 0)
+    (property "Footprint" "Connectors_Custom:TH-M3" (at 167.005 187.325 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (at 167.005 187.325 0)
@@ -3796,13 +3898,13 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:IRLML6344") (at 224.155 27.305 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005b11e118)
-    (property "Reference" "Q1" (at 229.235 25.4 0)
+    (property "Reference" "Q2" (at 229.235 25.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IRLML6344" (at 229.235 27.305 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TO_SOT_Packages_SMD:SOT-23" (at 229.235 29.21 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-3" (at 229.235 29.21 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "" (at 224.155 27.305 0)
@@ -3820,7 +3922,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "Q1") (unit 1)
+          (reference "Q2") (unit 1)
         )
       )
     )
@@ -3829,7 +3931,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 210.185 28.575 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005b11e229)
-    (property "Reference" "R4" (at 210.185 30.607 90)
+    (property "Reference" "R16" (at 210.185 30.607 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 210.185 28.575 90)
@@ -3852,7 +3954,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R4") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -3861,7 +3963,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 216.535 33.655 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005b11e296)
-    (property "Reference" "R5" (at 214.503 33.655 90)
+    (property "Reference" "R17" (at 214.503 33.655 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100K" (at 216.535 33.655 90)
@@ -3884,7 +3986,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R5") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -3893,7 +3995,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 64.135 172.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07a9ab9a-be5d-4fe3-b9f4-5137c7220a3d)
-    (property "Reference" "#PWR010" (at 64.135 176.53 0)
+    (property "Reference" "#PWR07" (at 64.135 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 64.135 169.164 0)
@@ -3909,7 +4011,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -3918,7 +4020,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 109.22 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09c108d3-8d8c-42bb-9a0b-e00c0f670326)
-    (property "Reference" "#PWR020" (at 109.22 111.76 0)
+    (property "Reference" "#PWR016" (at 109.22 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 109.22 109.22 0)
@@ -3934,7 +4036,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -3943,7 +4045,7 @@
   (symbol (lib_id "power:+BATT") (at 109.22 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0d08de6b-00ba-4fe6-999e-613ba5580dc9)
-    (property "Reference" "#PWR016" (at 109.22 26.67 0)
+    (property "Reference" "#PWR014" (at 109.22 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 109.22 18.7269 0)
@@ -3959,7 +4061,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -3968,7 +4070,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 233.68 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0fc9079e-e907-442e-9787-97e0710896e6)
-    (property "Reference" "C12" (at 234.315 152.4 0)
+    (property "Reference" "C16" (at 234.315 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 234.315 157.48 0)
@@ -3991,7 +4093,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C12") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -4000,7 +4102,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 243.84 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 12922f9f-e57c-4bdc-9da4-39302a68f7db)
-    (property "Reference" "C10" (at 244.475 152.4 0)
+    (property "Reference" "C18" (at 244.475 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 244.475 157.48 0)
@@ -4023,7 +4125,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C10") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -4032,7 +4134,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 140.97 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 14ee4093-d2ce-434b-af11-fa735c0d6ba2)
-    (property "Reference" "#PWR039" (at 140.97 63.5 0)
+    (property "Reference" "#PWR021" (at 140.97 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 140.97 60.96 0)
@@ -4048,7 +4150,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -4057,13 +4159,13 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 201.295 85.725 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1656b0d2-9f68-49ba-9b8e-2779463e861f)
-    (property "Reference" "C1" (at 202.565 80.01 90)
+    (property "Reference" "C9" (at 202.565 80.01 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7u" (at 204.47 82.55 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitors_SMD:C_0805_HandSoldering" (at 205.105 84.7598 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 205.105 84.7598 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 201.295 85.725 0)
@@ -4080,7 +4182,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C1") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -4095,7 +4197,7 @@
     (property "Value" "TestPoint_2Pole" (at 34.925 110.6749 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" (at 34.925 113.03 0)
+    (property "Footprint" "Connectors_Custom:TestPoint_Padx2_D2.0mm" (at 34.925 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 34.925 113.03 0)
@@ -4115,7 +4217,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 45.085 107.315 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 191394e0-40d2-41da-80a4-fa2d3601bb6d)
-    (property "Reference" "R1" (at 47.117 107.315 90)
+    (property "Reference" "R2" (at 47.117 107.315 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 45.085 107.315 90)
@@ -4138,7 +4240,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -4147,7 +4249,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 118.11 53.975 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 19df4901-2563-4afd-8b62-a0e4ac0c130f)
-    (property "Reference" "R16" (at 120.142 53.975 90)
+    (property "Reference" "R8" (at 120.142 53.975 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 118.11 53.975 90)
@@ -4170,7 +4272,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R16") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -4179,7 +4281,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 203.2 72.39 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1a41441a-e959-4b00-bb4b-b28dcacdf92e)
-    (property "Reference" "R13" (at 203.2 70.358 90)
+    (property "Reference" "R15" (at 203.2 70.358 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 203.2 72.39 90)
@@ -4202,7 +4304,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R13") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -4211,7 +4313,7 @@
   (symbol (lib_id "Device:L") (at 140.97 22.225 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1b7d998e-9117-40c7-a704-f58605e4d370)
-    (property "Reference" "L4" (at 140.97 17.5754 90)
+    (property "Reference" "L2" (at 140.97 17.5754 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 140.97 19.9996 90)
@@ -4229,12 +4331,12 @@
     (property "Part Number" "MLP2016S1R0MT0S1" (at 140.97 22.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c8b9a84e-5df3-478e-a53b-ce46065e35d7))
-    (pin "2" (uuid 3f0d43fe-f4e5-446a-bab5-bd75a4027044))
+    (pin "1" (uuid 6d94b0d1-9556-4b19-8afd-7fdeae17e650))
+    (pin "2" (uuid ac4d12c1-c1cf-43d0-b981-3dc123c59796))
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "L4") (unit 1)
+          (reference "L2") (unit 1)
         )
       )
     )
@@ -4243,7 +4345,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 213.36 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c1d1221-11cd-4ba4-a56d-1f280793361a)
-    (property "Reference" "C16" (at 213.995 152.4 0)
+    (property "Reference" "C11" (at 213.995 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 213.995 157.48 0)
@@ -4266,7 +4368,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C16") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -4275,7 +4377,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 80.01 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2366ffe1-9664-4e2e-afe0-c3a6f4c7f1bf)
-    (property "Reference" "#PWR03" (at 80.01 162.56 0)
+    (property "Reference" "#PWR010" (at 80.01 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 80.01 160.02 0)
@@ -4291,7 +4393,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -4300,7 +4402,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 146.05 113.03 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2409761e-9c27-4e63-aea0-56e011dba31d)
-    (property "Reference" "R11" (at 146.05 110.998 90)
+    (property "Reference" "R9" (at 146.05 110.998 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 146.05 113.03 90)
@@ -4323,7 +4425,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R11") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -4332,7 +4434,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 228.6 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d0451fb-55fb-4903-bd39-f5de2457026d)
-    (property "Reference" "#PWR027" (at 228.6 167.005 0)
+    (property "Reference" "#PWR038" (at 228.6 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 228.6 164.465 0)
@@ -4348,7 +4450,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -4357,7 +4459,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 124.46 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3eeeae3d-b2e9-4381-8c9e-34e83b1a8217)
-    (property "Reference" "C20" (at 125.095 54.61 0)
+    (property "Reference" "C7" (at 125.095 54.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22p" (at 125.095 59.69 0)
@@ -4380,7 +4482,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C20") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -4389,7 +4491,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 146.05 142.875 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3f91b761-a777-4d99-8a4c-25df4a168b25)
-    (property "Reference" "R8" (at 146.05 140.843 90)
+    (property "Reference" "R12" (at 146.05 140.843 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56" (at 146.05 142.875 90)
@@ -4412,7 +4514,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R8") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -4421,7 +4523,7 @@
   (symbol (lib_id "Device:C") (at 218.44 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41433571-4895-46c0-82bc-40e48adf82a7)
-    (property "Reference" "C15" (at 219.075 152.4 0)
+    (property "Reference" "C13" (at 219.075 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 219.71 157.48 0)
@@ -4444,7 +4546,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C15") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -4453,7 +4555,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 146.05 117.475 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4809f27b-bac4-4cfe-bd99-d8e7ecc41f51)
-    (property "Reference" "R12" (at 146.05 115.443 90)
+    (property "Reference" "R10" (at 146.05 115.443 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 146.05 117.475 90)
@@ -4476,7 +4578,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R12") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -4485,7 +4587,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 201.93 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 491ef2bd-8115-4b41-876e-30f3b189897b)
-    (property "Reference" "#PWR032" (at 201.93 167.005 0)
+    (property "Reference" "#PWR028" (at 201.93 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 201.93 164.465 0)
@@ -4501,7 +4603,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -4510,7 +4612,7 @@
   (symbol (lib_id "Diode:MBR0530") (at 202.565 100.33 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a1307f9-abb6-42c2-bf3a-35f156e0c5fb)
-    (property "Reference" "D1" (at 199.39 97.79 90)
+    (property "Reference" "D3" (at 199.39 97.79 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "MBR0530" (at 205.74 97.155 0)
@@ -4533,7 +4635,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "D1") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -4542,7 +4644,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 243.84 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4cecf664-2512-49a2-ba7a-e26860bb7f95)
-    (property "Reference" "#PWR024" (at 243.84 167.005 0)
+    (property "Reference" "#PWR041" (at 243.84 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 164.465 0)
@@ -4558,7 +4660,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -4567,7 +4669,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 197.485 74.295 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d1c12bc-00da-46eb-b30c-322bdb9f0156)
-    (property "Reference" "#PWR019" (at 197.485 80.645 0)
+    (property "Reference" "#PWR027" (at 197.485 80.645 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 197.485 78.105 0)
@@ -4583,19 +4685,19 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "TemperatureHumidityEPD-rescue:L_Core_Ferrite_Small") (at 118.11 90.17 0) (unit 1)
+  (symbol (lib_id "TemperatureHumidityEPD-rescue:L_Core_Ferrite_Small") (at 118.11 90.17 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d832346-b52e-4895-9975-3dad55c6c001)
-    (property "Reference" "L1" (at 114.3 88.265 0)
+    (property "Reference" "L1" (at 121.92 92.075 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0" (at 115.57 90.17 0)
+    (property "Value" "0" (at 120.65 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 118.11 90.17 0)
@@ -4610,8 +4712,8 @@
     (property "Part Number" "RCS06030000Z0EC" (at 118.11 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 96909043-5e35-4d73-893d-fbf1d78fd422))
-    (pin "2" (uuid d59c6fe3-0894-4a80-b5bb-7200e2409131))
+    (pin "1" (uuid 306632e0-ddf7-417d-8be2-11d095e6176c))
+    (pin "2" (uuid 791fa4aa-0760-4024-8487-33b8819688e3))
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
@@ -4624,7 +4726,7 @@
   (symbol (lib_id "MCU_AnalogDevices_local:MAX32660GTP") (at 80.01 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 524e7ea6-fe65-4ac4-a81c-4e7f18a9ae7f)
-    (property "Reference" "U3" (at 82.2041 154.1201 0)
+    (property "Reference" "U2" (at 82.2041 154.1201 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MAX32660GTP" (at 82.2041 156.5443 0)
@@ -4666,7 +4768,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "U3") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -4675,13 +4777,13 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 217.17 94.615 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5294287b-ad18-477e-8d1c-83469e6c8268)
-    (property "Reference" "C3" (at 218.44 88.9 90)
+    (property "Reference" "C12" (at 218.44 88.9 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7u" (at 220.345 91.44 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitors_SMD:C_0805_HandSoldering" (at 220.98 93.6498 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 220.98 93.6498 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 217.17 94.615 0)
@@ -4698,7 +4800,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C3") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -4707,7 +4809,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 109.22 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 53410679-b28b-4d2d-b1e8-8f9827b1cff1)
-    (property "Reference" "R15" (at 111.252 33.02 90)
+    (property "Reference" "R4" (at 111.252 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 109.22 33.02 90)
@@ -4730,7 +4832,71 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R15") (unit 1)
+          (reference "R4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 142.24 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 53664db4-ecd7-4857-8f90-6fafccfdc0ab)
+    (property "Reference" "R19" (at 144.272 95.25 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "10K" (at 142.24 95.25 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 140.462 95.25 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 142.24 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)" (at 142.24 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "RT0603FRE0710KL" (at 142.24 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 223a5c08-bb8e-43fd-b531-466709637b87))
+    (pin "2" (uuid 5b864e3f-ce01-46c8-a58b-edaaa972c3a9))
+    (instances
+      (project "TemperatureHumidityEPD"
+        (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
+          (reference "R19") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 135.255 100.965 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 56f7962a-e63a-4154-8fb8-7530a86d5c43)
+    (property "Reference" "SW1" (at 135.255 93.8997 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 135.255 96.3239 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Switch_Custom:Panasonic_EVQPUJ_EVQPUA" (at 135.255 95.885 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 135.255 95.885 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "switch, momentary-off, SMT" (at 135.255 100.965 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Number" "EVQ-P7A01P" (at 135.255 100.965 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 64e030c2-08f8-496f-9b6a-c876f3d275d7))
+    (pin "2" (uuid db6fbf82-faf0-45a3-a1cc-2e9137fe6942))
+    (instances
+      (project "TemperatureHumidityEPD"
+        (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -4739,7 +4905,7 @@
   (symbol (lib_id "ADI_Power:MAX20343H") (at 140.97 40.005 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 575a35d9-35f8-46b6-b0a7-7182b29a0bdf)
-    (property "Reference" "U1" (at 143.1641 54.2981 0)
+    (property "Reference" "U3" (at 143.1641 54.2981 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MAX20343H" (at 143.51 56.515 0)
@@ -4757,8 +4923,6 @@
     (property "Part Number" "MAX20343HEFC+" (at 140.97 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "" (uuid 89199208-89ef-495a-9715-9f3736359e90))
-    (pin "" (uuid 89199208-89ef-495a-9715-9f3736359e90))
     (pin "1" (uuid 888d01d3-7dd3-4ee7-956f-a54ca272cd3d))
     (pin "10" (uuid 1084d215-83e4-48de-b72b-490170cfbeb6))
     (pin "11" (uuid 0d0506f1-edb5-4f8e-8080-6071591557a6))
@@ -4769,10 +4933,12 @@
     (pin "5" (uuid 9c0e85ad-e6f3-4ff2-a50f-d1f5e4003b11))
     (pin "6" (uuid cdbf437f-0b92-4b45-96ea-9f5a84a8f732))
     (pin "7" (uuid 851120d2-5942-4171-8f17-059a528fd900))
+    (pin "8" (uuid 773adc20-0e04-48ee-a6bb-a2ca8a5601f4))
+    (pin "9" (uuid b1e61613-c912-4c19-bebf-ed527b9d5ccb))
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "U1") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -4781,7 +4947,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 202.565 109.855 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5dc69b44-421a-4e25-9fbc-15f3df11ff54)
-    (property "Reference" "#PWR033" (at 202.565 116.205 0)
+    (property "Reference" "#PWR029" (at 202.565 116.205 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 202.565 113.665 0)
@@ -4797,7 +4963,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -4806,7 +4972,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 233.68 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 60489791-8333-4dca-b80b-297b887c88e7)
-    (property "Reference" "#PWR026" (at 233.68 167.005 0)
+    (property "Reference" "#PWR039" (at 233.68 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 233.68 164.465 0)
@@ -4822,7 +4988,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -4863,7 +5029,7 @@
   (symbol (lib_id "Diode:MBR0530") (at 210.82 100.33 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 64144e1a-5ec3-4b41-9ba6-a7320808b30e)
-    (property "Reference" "D2" (at 207.645 97.79 90)
+    (property "Reference" "D4" (at 207.645 97.79 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MBR0530" (at 213.995 97.155 0)
@@ -4886,7 +5052,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "D2") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -4895,7 +5061,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 208.28 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 658de882-c6b0-4673-8fc4-8dd35bc00239)
-    (property "Reference" "C17" (at 208.915 152.4 0)
+    (property "Reference" "C10" (at 208.915 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 208.915 157.48 0)
@@ -4918,7 +5084,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C17") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -4927,7 +5093,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x05_Odd_Even") (at 85.09 180.975 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c84f6ca-6246-4356-b283-5bcca10aff01)
-    (property "Reference" "J5" (at 86.36 170.4807 0)
+    (property "Reference" "J2" (at 86.36 170.4807 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "FTSH-105-01-L-DV-K" (at 86.36 172.9049 0)
@@ -4945,20 +5111,20 @@
     (property "Part Number" "FTSH-105-01-L-DV-K" (at 85.09 180.975 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dc6167d5-84b9-4be6-9a18-ba3b7b38ce0b))
+    (pin "01" (uuid c7fee321-ed08-493a-9288-8d5d3a0acd26))
+    (pin "02" (uuid 68d6a730-fe73-4166-ba66-4bfb7548b8c9))
+    (pin "03" (uuid e6bc28ed-b2cf-4fb0-b0b9-b699197c22f4))
+    (pin "04" (uuid d7f200f5-d2be-4329-8d47-492c4728db36))
+    (pin "05" (uuid 9a582ec9-a84f-4a5f-9027-38b59857e4a7))
+    (pin "06" (uuid 46e7b5bf-9530-4812-be03-5af3eec4548e))
+    (pin "07" (uuid 6d4ed368-0f55-4437-9e6a-9447c8cc5844))
+    (pin "08" (uuid 58eb73f0-0072-40ba-af7f-25c7c87c5dee))
+    (pin "09" (uuid bea9da5f-d871-4ec1-9b88-0a1775bf5ac0))
     (pin "10" (uuid 51dc6e0b-7f3f-426b-a26d-bb5319086899))
-    (pin "2" (uuid f4b1bc3b-d5cf-44ad-bd5a-92e885a6f6ed))
-    (pin "3" (uuid 18732641-ab5f-463e-b0c9-b06b4208dfce))
-    (pin "4" (uuid 2791a51b-77e7-4b75-950f-e568fabae800))
-    (pin "5" (uuid 109932da-b7a4-4fe1-9777-cc12c322116e))
-    (pin "6" (uuid 1b3da0ab-65c1-45c8-a066-240ced8d6927))
-    (pin "7" (uuid 45809ead-c05f-484c-b6d7-beb5b1a647a8))
-    (pin "8" (uuid d4dd2012-9b59-422a-bfb7-eb7cd3f3b8b1))
-    (pin "9" (uuid 04aed6fb-b437-40a0-aa8a-6e1f994f5070))
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "J5") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -4967,7 +5133,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 162.56 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6cdd5490-c28d-4552-b889-37a5c8ae2908)
-    (property "Reference" "#PWR041" (at 162.56 26.67 0)
+    (property "Reference" "#PWR023" (at 162.56 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 162.56 19.304 0)
@@ -4983,7 +5149,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -4992,7 +5158,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 117.475 184.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 70600514-a3a1-480f-81ca-a22cd47bacc1)
-    (property "Reference" "R10" (at 117.475 182.118 90)
+    (property "Reference" "R7" (at 117.475 182.118 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 117.475 184.15 90)
@@ -5015,7 +5181,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R10") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -5024,7 +5190,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 118.11 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 70b0f33f-53b0-4fa7-b848-ac441399d2b4)
-    (property "Reference" "#PWR01" (at 118.11 88.9 0)
+    (property "Reference" "#PWR017" (at 118.11 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 118.11 81.534 0)
@@ -5040,22 +5206,22 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Transistor_FET:BSS214NW") (at 220.345 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+  (symbol (lib_id "Transistor_FET:BSS214NW") (at 220.345 72.39 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 7166c622-1ce4-4bf8-b303-51bffa254870)
-    (property "Reference" "Q2" (at 225.552 71.1779 0)
+    (property "Reference" "Q1" (at 225.552 73.6021 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Si1308EDL" (at 225.552 73.6021 0)
+    (property "Value" "Si1308EDL" (at 225.552 71.1779 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70" (at 225.425 74.295 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70" (at 225.425 70.485 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "https://www.vishay.com/doc?63399" (at 220.345 72.39 0)
@@ -5073,7 +5239,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "Q2") (unit 1)
+          (reference "Q1") (unit 1)
         )
       )
     )
@@ -5082,7 +5248,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 124.46 62.865 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 72507850-0946-411c-92ad-cb9f596d1e89)
-    (property "Reference" "#PWR05" (at 124.46 69.215 0)
+    (property "Reference" "#PWR020" (at 124.46 69.215 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 66.675 0)
@@ -5098,7 +5264,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -5107,7 +5273,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 64.135 188.595 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 755839d9-039f-475b-bd1a-7f6eaad200d6)
-    (property "Reference" "#PWR011" (at 64.135 194.945 0)
+    (property "Reference" "#PWR08" (at 64.135 194.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 64.135 192.405 0)
@@ -5123,7 +5289,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -5132,7 +5298,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 109.22 51.435 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7699fd45-de7b-4bd7-91af-2e1affad2e34)
-    (property "Reference" "#PWR043" (at 109.22 57.785 0)
+    (property "Reference" "#PWR015" (at 109.22 57.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 109.22 55.245 0)
@@ -5148,7 +5314,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -5157,7 +5323,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 248.92 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 77241c0b-7c21-4024-b094-e2ae75d396d5)
-    (property "Reference" "C9" (at 249.555 152.4 0)
+    (property "Reference" "C19" (at 249.555 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 249.555 157.48 0)
@@ -5180,7 +5346,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C9") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -5189,7 +5355,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 213.36 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 781776d4-4705-42e7-a917-6a3c47acb5f5)
-    (property "Reference" "#PWR030" (at 213.36 167.005 0)
+    (property "Reference" "#PWR033" (at 213.36 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 213.36 164.465 0)
@@ -5205,7 +5371,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -5214,7 +5380,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 218.44 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 781e7209-5364-4fed-81b8-e285db39a62a)
-    (property "Reference" "#PWR029" (at 218.44 167.005 0)
+    (property "Reference" "#PWR034" (at 218.44 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 218.44 164.465 0)
@@ -5230,7 +5396,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -5239,7 +5405,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 238.76 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c8c25d5-4b0f-4e9c-8824-61b977214b20)
-    (property "Reference" "#PWR025" (at 238.76 167.005 0)
+    (property "Reference" "#PWR040" (at 238.76 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.76 164.465 0)
@@ -5255,7 +5421,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -5270,7 +5436,7 @@
     (property "Value" "Conn_01x24" (at 271.78 153.035 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_FFC-FPC:TE_2-1734839-4_1x24-1MP_P0.5mm_Horizontal" (at 276.86 120.015 0)
+    (property "Footprint" "Connectors_Custom:TE_2-1734839-4_1x24-1MP_P0.5mm_Horizontal_reversednumber" (at 276.86 120.015 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.mouser.com/datasheet/2/418/7/ENG_CD_1734839_C_C_1734839-2017341.pdf" (at 276.86 120.015 0)
@@ -5350,7 +5516,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 254 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8708f7b0-372a-43a4-9c1c-d92c00d34a21)
-    (property "Reference" "C8" (at 254.635 152.4 0)
+    (property "Reference" "C20" (at 254.635 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 254.635 157.48 0)
@@ -5373,7 +5539,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C8") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -5420,7 +5586,7 @@
     (property "Value" "TestPoint_2Pole" (at 106.045 38.1 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill1.0mm" (at 109.22 45.085 0)
+    (property "Footprint" "Connectors_Custom:TestPoint_Padx2_D2.0mm" (at 109.22 45.085 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 109.22 45.085 0)
@@ -5437,14 +5603,14 @@
     )
   )
 
-  (symbol (lib_id "Device:LED") (at 156.21 134.62 90) (unit 1)
+  (symbol (lib_id "Device:LED") (at 156.21 134.62 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a08c31ac-457a-4ed7-aa00-bb442c22878c)
-    (property "Reference" "D4" (at 159.131 134.9954 90)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Reference" "D1" (at 158.242 131.8204 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "LED" (at 159.131 137.4196 90)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Value" "LED" (at 158.242 134.2446 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 156.21 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -5458,12 +5624,12 @@
     (property "Part Number" "IN-S85AT5UW" (at 156.21 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4e460759-6b87-4888-88db-fd4a759df9eb))
-    (pin "2" (uuid d13e2462-d0e1-467f-8039-38b5485954ed))
+    (pin "1" (uuid a6acfe03-6a14-4200-9da5-b5d470e3f6d6))
+    (pin "2" (uuid ab004e68-b0c4-4c39-a2e0-69ae6cc28ab1))
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "D4") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -5472,7 +5638,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 163.83 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a0b3db4f-5541-4442-9c04-75b5579f9662)
-    (property "Reference" "#PWR038" (at 163.83 130.81 0)
+    (property "Reference" "#PWR025" (at 163.83 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 163.83 123.444 0)
@@ -5488,7 +5654,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -5497,7 +5663,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 248.92 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1ffb1b6-11fa-487c-8246-b06a37f2d353)
-    (property "Reference" "#PWR023" (at 248.92 167.005 0)
+    (property "Reference" "#PWR042" (at 248.92 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.92 164.465 0)
@@ -5513,7 +5679,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -5522,7 +5688,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 162.56 31.115 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a53d035c-c487-46e7-a9ca-84ff3728c1ec)
-    (property "Reference" "C19" (at 163.195 28.575 0)
+    (property "Reference" "C8" (at 163.195 28.575 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 163.195 33.655 0)
@@ -5545,7 +5711,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C19") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -5554,7 +5720,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 118.11 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a7efbfad-3498-4495-bd6d-0c86fca8cccc)
-    (property "Reference" "#PWR021" (at 118.11 111.76 0)
+    (property "Reference" "#PWR018" (at 118.11 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 109.22 0)
@@ -5570,7 +5736,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -5611,7 +5777,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 45.085 100.965 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b3438bd7-7395-4271-b12c-ad8386500abf)
-    (property "Reference" "#PWR034" (at 45.085 104.775 0)
+    (property "Reference" "#PWR06" (at 45.085 104.775 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 45.085 97.409 0)
@@ -5627,7 +5793,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -5636,7 +5802,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 208.28 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b374de0d-67d4-4d2c-a96f-76bea7194478)
-    (property "Reference" "#PWR036" (at 208.28 85.09 0)
+    (property "Reference" "#PWR030" (at 208.28 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 208.28 77.724 0)
@@ -5652,7 +5818,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -5661,7 +5827,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 146.05 138.43 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9afb238-621e-4f9e-b385-ba93c0f1a860)
-    (property "Reference" "R9" (at 146.05 136.398 90)
+    (property "Reference" "R11" (at 146.05 136.398 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56" (at 146.05 138.43 90)
@@ -5684,7 +5850,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R9") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -5693,7 +5859,7 @@
   (symbol (lib_id "power:+BATT") (at 22.225 19.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ba8ab0dd-cc61-4d66-9285-260977cea0ec)
-    (property "Reference" "#PWR040" (at 22.225 23.495 0)
+    (property "Reference" "#PWR01" (at 22.225 23.495 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 22.225 15.5519 0)
@@ -5709,7 +5875,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -5718,7 +5884,7 @@
   (symbol (lib_id "Device:C") (at 109.22 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c159ad90-9eb7-4aed-8f6d-3a57d10d0829)
-    (property "Reference" "C6" (at 112.141 100.3879 0)
+    (property "Reference" "C4" (at 112.141 100.3879 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 112.141 102.8121 0)
@@ -5741,7 +5907,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C6") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -5750,7 +5916,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 78.74 188.595 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c51de9e1-9f70-4369-8c9c-8c00a694e1e7)
-    (property "Reference" "#PWR015" (at 78.74 194.945 0)
+    (property "Reference" "#PWR09" (at 78.74 194.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 192.405 0)
@@ -5766,7 +5932,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -5775,7 +5941,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 119.38 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ca48f422-ec02-4888-82ad-798174b01833)
-    (property "Reference" "C21" (at 120.015 29.21 0)
+    (property "Reference" "C6" (at 120.015 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 120.015 34.29 0)
@@ -5798,7 +5964,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C21") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -5807,7 +5973,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 238.76 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cb37c1e2-dac3-455b-98fb-07365664c206)
-    (property "Reference" "C11" (at 239.395 152.4 0)
+    (property "Reference" "C17" (at 239.395 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 239.395 157.48 0)
@@ -5830,7 +5996,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C11") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -5839,7 +6005,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 201.93 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cda81626-6542-40e4-b0c4-099a17c2e57a)
-    (property "Reference" "R6" (at 203.962 154.94 90)
+    (property "Reference" "R14" (at 203.962 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0" (at 201.93 154.94 90)
@@ -5862,7 +6028,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R6") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -5896,7 +6062,7 @@
   (symbol (lib_id "Diode:MBR0530") (at 222.885 100.33 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d318f0ef-c4f8-40da-a7f7-c59ee5472278)
-    (property "Reference" "D3" (at 219.71 97.79 90)
+    (property "Reference" "D5" (at 219.71 97.79 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "MBR0530" (at 226.695 97.155 0)
@@ -5919,7 +6085,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "D3") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -5928,7 +6094,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 194.945 88.265 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d7391217-40b4-428e-b18d-8b425e9e1242)
-    (property "Reference" "#PWR035" (at 194.945 94.615 0)
+    (property "Reference" "#PWR026" (at 194.945 94.615 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 194.945 92.075 0)
@@ -5944,7 +6110,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -5953,7 +6119,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 223.52 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dac8392b-cd2a-4581-b39c-ae1392366d82)
-    (property "Reference" "#PWR028" (at 223.52 167.005 0)
+    (property "Reference" "#PWR035" (at 223.52 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 164.465 0)
@@ -5969,7 +6135,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -6003,7 +6169,7 @@
   (symbol (lib_id "Device:C") (at 118.11 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e1f5a943-a1f5-42ea-b1fa-a29b2c81faeb)
-    (property "Reference" "C7" (at 121.031 100.3879 0)
+    (property "Reference" "C5" (at 121.031 100.3879 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 121.031 102.8121 0)
@@ -6026,7 +6192,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C7") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -6035,7 +6201,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 222.885 60.96 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e328172a-401d-4e00-bc54-100f51904b28)
-    (property "Reference" "R14" (at 220.853 60.96 90)
+    (property "Reference" "R18" (at 220.853 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0R47" (at 222.885 60.96 90)
@@ -6058,7 +6224,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R14") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -6067,7 +6233,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 162.56 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e36a7928-2740-49f3-aad2-c26249992eb8)
-    (property "Reference" "#PWR042" (at 162.56 41.91 0)
+    (property "Reference" "#PWR024" (at 162.56 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 162.56 39.37 0)
@@ -6083,7 +6249,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -6092,7 +6258,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 113.665 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e40f906a-58d6-46c8-9c4f-f13abefa3d10)
-    (property "Reference" "R17" (at 115.697 33.02 90)
+    (property "Reference" "R5" (at 115.697 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 113.665 33.02 90)
@@ -6115,7 +6281,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R17") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -6124,7 +6290,7 @@
   (symbol (lib_id "Device:LED") (at 163.83 134.62 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e4faee6e-d005-4984-af4b-98ca500bae9f)
-    (property "Reference" "D5" (at 166.751 134.9954 90)
+    (property "Reference" "D2" (at 166.751 134.9954 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (at 166.751 137.4196 90)
@@ -6147,7 +6313,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "D5") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -6156,7 +6322,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 117.475 179.705 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e51ce20d-56d5-4c31-bf49-a19bb8c3c942)
-    (property "Reference" "R7" (at 117.475 177.673 90)
+    (property "Reference" "R6" (at 117.475 177.673 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 117.475 179.705 90)
@@ -6179,7 +6345,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R7") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -6188,7 +6354,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 29.845 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e542cddb-907f-4c6c-b8aa-5f1dca9d8821)
-    (property "Reference" "#PWR012" (at 29.845 120.65 0)
+    (property "Reference" "#PWR03" (at 29.845 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 29.845 118.11 0)
@@ -6204,7 +6370,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -6213,7 +6379,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:C") (at 228.6 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e5ecc5ca-1d31-41f1-9961-14b39540b0f3)
-    (property "Reference" "C13" (at 229.235 152.4 0)
+    (property "Reference" "C15" (at 229.235 152.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 229.235 157.48 0)
@@ -6236,7 +6402,32 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "C13") (unit 1)
+          (reference "C15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 142.24 90.17 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e615e5ee-b545-41c2-989e-e197767ea629)
+    (property "Reference" "#PWR045" (at 142.24 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 142.24 86.614 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 142.24 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 142.24 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 11fcd977-b67e-4867-8c3d-0c0213447238))
+    (instances
+      (project "TemperatureHumidityEPD"
+        (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -6245,7 +6436,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:L_Core_Ferrite_Small") (at 215.265 85.725 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f0495f37-b7f7-4000-b8d6-6dd4935c910a)
-    (property "Reference" "L2" (at 215.265 81.28 90)
+    (property "Reference" "L4" (at 215.265 81.28 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "68u" (at 216.535 83.185 90)
@@ -6268,7 +6459,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "L2") (unit 1)
+          (reference "L4") (unit 1)
         )
       )
     )
@@ -6277,7 +6468,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:R") (at 158.115 46.355 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f2460974-8ffd-44ca-84d2-863a4f232873)
-    (property "Reference" "R18" (at 160.147 46.355 90)
+    (property "Reference" "R13" (at 160.147 46.355 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DNP" (at 158.115 46.355 90)
@@ -6300,7 +6491,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "R18") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -6309,7 +6500,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 119.38 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f5815c6f-47c0-4bf0-b824-ccd4ea9859c3)
-    (property "Reference" "#PWR04" (at 119.38 41.91 0)
+    (property "Reference" "#PWR019" (at 119.38 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 39.37 0)
@@ -6325,7 +6516,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -6334,7 +6525,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 254 160.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f8289c20-00e8-4421-a5b6-73f938e428f3)
-    (property "Reference" "#PWR022" (at 254 167.005 0)
+    (property "Reference" "#PWR044" (at 254 167.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 254 164.465 0)
@@ -6350,7 +6541,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -6359,7 +6550,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:GND") (at 158.115 51.435 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fbd152a2-9bdf-4ffa-aa15-0f549e72c4d8)
-    (property "Reference" "#PWR044" (at 158.115 57.785 0)
+    (property "Reference" "#PWR022" (at 158.115 57.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 158.115 55.245 0)
@@ -6375,7 +6566,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -6384,7 +6575,7 @@
   (symbol (lib_id "TemperatureHumidityEPD-rescue:+3V3") (at 210.185 127.635 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe6c23c3-68d1-486b-ad6d-2a435b7db238)
-    (property "Reference" "#PWR018" (at 210.185 131.445 0)
+    (property "Reference" "#PWR032" (at 210.185 131.445 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 210.185 124.079 0)
@@ -6400,7 +6591,7 @@
     (instances
       (project "TemperatureHumidityEPD"
         (path "/81d518cc-cb14-4db2-89d6-708f10220fa4"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
