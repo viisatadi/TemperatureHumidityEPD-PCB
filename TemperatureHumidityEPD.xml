@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\viseli\Documents\FAE\_SW Digital and MCU related\Projects\Open Source Design Translation\Temp-Humidity\TemperatureHumidityePaper_Hardware\TemperatureHumidityEPD.kicad_sch</source>
+    <date>12/1/2023 9:38:49 AM</date>
+    <tool>Eeschema 7.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>2023-11-30</date>
+        <source>TemperatureHumidityEPD.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>CR2032</value>
+      <footprint>Connectors_Custom:BatteryHolder_TE_BATT-HLD-000_1x2032</footprint>
+      <fields>
+        <field name="Part Number">BAT-HLD-001</field>
+      </fields>
+      <libsource lib="Connectors_Custom" part="Battery_Cell_Holder" description="Single-cell battery"/>
+      <property name="Part Number" value="BAT-HLD-001"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Single-cell battery"/>
+      <property name="ki_keywords" value="battery cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005aca9c28</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005acaa185</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)</field>
+        <field name="Part Number">C1608X7R1A105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="C1608X7R1A105K080AC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>85f09b7f-8016-4d72-86ce-1f8e225b1301</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 0.1u, 5%, 16V, ceramic, X7R, SMT, 0603 (1608)</field>
+        <field name="Part Number">C0603C104K3RACTU</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 0.1u, 5%, 16V, ceramic, X7R, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="C0603C104K3RACTU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005acab7e1</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)</field>
+        <field name="Part Number">C1608X7R1A105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="C1608X7R1A105K080AC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c159ad90-9eb7-4aed-8f6d-3a57d10d0829</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)</field>
+        <field name="Part Number">C1608X7R1A105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="C1608X7R1A105K080AC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1f5a943-a1f5-42ea-b1fa-a29b2c81faeb</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>22u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 22u, 10%, 6.3V, ceramic, X7R, SMT, 1206</field>
+        <field name="Part Number">GRM31CR70J226KE19L</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 22u, 10%, 6.3V, ceramic, X7R, SMT, 1206"/>
+      <property name="Part Number" value="GRM31CR70J226KE19L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca48f422-ec02-4888-82ad-798174b01833</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>22p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 22p, 5%, 50V, ceramic, C0G, SMT, 0603 (1608)</field>
+        <field name="Part Number">CC0603JRNPO9BN220</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 22p, 5%, 50V, ceramic, C0G, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="CC0603JRNPO9BN220"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3eeeae3d-b2e9-4381-8c9e-34e83b1a8217</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>22u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 22u, 10%, 6.3V, ceramic, X7R, SMT, 1206</field>
+        <field name="Part Number">GRM31CR70J226KE19L</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 22u, 10%, 6.3V, ceramic, X7R, SMT, 1206"/>
+      <property name="Part Number" value="GRM31CR70J226KE19L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a53d035c-c487-46e7-a9ca-84ff3728c1ec</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 4.7u, 10%, 25V, ceramic, X7S, SMT, 0805 (2012)</field>
+        <field name="Part Number">GRM21BC71E475KE11L</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 4.7u, 10%, 25V, ceramic, X7S, SMT, 0805 (2012)"/>
+      <property name="Part Number" value="GRM21BC71E475KE11L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1656b0d2-9f68-49ba-9b8e-2779463e861f</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>658de882-c6b0-4673-8fc4-8dd35bc00239</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c1d1221-11cd-4ba4-a56d-1f280793361a</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 4.7u, 10%, 25V, ceramic, X7S, SMT, 0805 (2012)</field>
+        <field name="Part Number">GRM21BC71E475KE11L</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 4.7u, 10%, 25V, ceramic, X7S, SMT, 0805 (2012)"/>
+      <property name="Part Number" value="GRM21BC71E475KE11L"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5294287b-ad18-477e-8d1c-83469e6c8268</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)</field>
+        <field name="Part Number">C1608X7R1A105K080AC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="capacitor, 1u, 10%, 10V, ceramic, X7R, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="C1608X7R1A105K080AC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41433571-4895-46c0-82bc-40e48adf82a7</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87b0909c-a4e5-486f-8db0-11088b28070e</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5ecc5ca-1d31-41f1-9961-14b39540b0f3</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fc9079e-e907-442e-9787-97e0710896e6</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb37c1e2-dac3-455b-98fb-07365664c206</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12922f9f-e57c-4bdc-9da4-39302a68f7db</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77241c0b-7c21-4024-b094-e2ae75d396d5</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)</field>
+        <field name="Part Number">GRM188D71A106KA73J</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="C" description=""/>
+      <property name="Description" value="capacitor, 10u, 10%, 10V, ceramic, X7T, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="GRM188D71A106KA73J"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8708f7b0-372a-43a4-9c1c-d92c00d34a21</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN_S85AT_Series_V1_1-2323391.pdf</datasheet>
+      <fields>
+        <field name="Description">LED, white, SMT, 0805 (2012)</field>
+        <field name="Part Number">IN-S85AT5UW</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Description" value="LED, white, SMT, 0805 (2012)"/>
+      <property name="Part Number" value="IN-S85AT5UW"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a08c31ac-457a-4ed7-aa00-bb442c22878c</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/180/IN_S85AT_Series_V1_1-2323391.pdf</datasheet>
+      <fields>
+        <field name="Description">LED, white, SMT, 0805 (2012)</field>
+        <field name="Part Number">IN-S85AT5UW</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Description" value="LED, white, SMT, 0805 (2012)"/>
+      <property name="Part Number" value="IN-S85AT5UW"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4faee6e-d005-4984-af4b-98ca500bae9f</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>MBR0530</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
+      <fields>
+        <field name="Description">diode, Schottky, 30Vr, 0.5A, SMT, SOD-123-3</field>
+        <field name="Part Number">MBR0530T1G</field>
+      </fields>
+      <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="Description" value="diode, Schottky, 30Vr, 0.5A, SMT, SOD-123-3"/>
+      <property name="Part Number" value="MBR0530T1G"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a1307f9-abb6-42c2-bf3a-35f156e0c5fb</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>MBR0530</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
+      <fields>
+        <field name="Description">diode, Schottky, 30Vr, 0.5A, SMT, SOD-123-3</field>
+        <field name="Part Number">MBR0530T1G</field>
+      </fields>
+      <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="Description" value="diode, Schottky, 30Vr, 0.5A, SMT, SOD-123-3"/>
+      <property name="Part Number" value="MBR0530T1G"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>64144e1a-5ec3-4b41-9ba6-a7320808b30e</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>MBR0530</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
+      <fields>
+        <field name="Description">diode, Schottky, 30Vr, 0.5A, SMT, SOD-123-3</field>
+        <field name="Part Number">MBR0530T1G</field>
+      </fields>
+      <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="Description" value="diode, Schottky, 30Vr, 0.5A, SMT, SOD-123-3"/>
+      <property name="Part Number" value="MBR0530T1G"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d318f0ef-c4f8-40da-a7f7-c59ee5472278</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x02</value>
+      <footprint>Connectors_Custom:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="Conn_01x02" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ac8590e</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>FTSH-105-01-L-DV-K</value>
+      <footprint>Connectors_Custom:SAMTEC_FTSH-105-01-L-DV-K</footprint>
+      <datasheet>https://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-x-xx-mkt.pdf</datasheet>
+      <fields>
+        <field name="Description">connector, 10-pin, 2x5, 0.5mm pitch, polarized, SMT</field>
+        <field name="Part Number">FTSH-105-01-L-DV-K</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x05_Odd_Even" description="Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="connector, 10-pin, 2x5, 0.5mm pitch, polarized, SMT"/>
+      <property name="Part Number" value="FTSH-105-01-L-DV-K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6c84f6ca-6246-4356-b283-5bcca10aff01</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x08</value>
+      <footprint>Connector_JST:JST_PH_S8B-PH-SM4-TB_1x08-1MP_P2.00mm_Horizontal</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="Conn_01x08" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005acaa270</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x24</value>
+      <footprint>Connectors_Custom:TE_2-1734839-4_1x24-1MP_P0.5mm_Horizontal_reversednumber</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/418/7/ENG_CD_1734839_C_C_1734839-2017341.pdf</datasheet>
+      <fields>
+        <field name="Description">connector, FPC, 24 pin, 0.5mm pitch, top contact</field>
+        <field name="Part Number">2-1734839-4</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x24" description="Generic connector, single row, 01x24, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Description" value="connector, FPC, 24 pin, 0.5mm pitch, top contact"/>
+      <property name="Part Number" value="2-1734839-4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x24, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80a16521-2644-4e02-90c2-2f6c28fcf95b</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="L_Core_Ferrite_Small" description=""/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d832346-b52e-4895-9975-3dad55c6c001</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>1u</value>
+      <footprint>Inductors_Custom:L_0805_2016Metric</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_mlp2016_en.pdf</datasheet>
+      <fields>
+        <field name="Description">inductor, 1u, 20%, 1A, 117mohm, SMD, 0806 (2016)</field>
+        <field name="Part Number">MLP2016S1R0MT0S1</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Description" value="inductor, 1u, 20%, 1A, 117mohm, SMD, 0806 (2016)"/>
+      <property name="Part Number" value="MLP2016S1R0MT0S1"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b7d998e-9117-40c7-a704-f58605e4d370</tstamps>
+    </comp>
+    <comp ref="L3">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="L_Core_Ferrite_Small" description=""/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a80e5b04-438a-4c88-bb9e-b26d24dd7614</tstamps>
+    </comp>
+    <comp ref="L4">
+      <value>68u</value>
+      <footprint>Inductors_Custom:L_3x3_H3</footprint>
+      <datasheet>https://www.bourns.com/pdfs/SDR0302.pdf</datasheet>
+      <fields>
+        <field name="Description">inductor, 68u, 10%, 300mA, 1.85ohm, SMT, 3mm_diam x 2mm</field>
+        <field name="Part Number">SDR0302-680KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="L_Core_Ferrite_Small" description=""/>
+      <property name="Description" value="inductor, 68u, 10%, 300mA, 1.85ohm, SMT, 3mm_diam x 2mm"/>
+      <property name="Part Number" value="SDR0302-680KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f0495f37-b7f7-4000-b8d6-6dd4935c910a</tstamps>
+    </comp>
+    <comp ref="MP1">
+      <value>MOUNTHOLE</value>
+      <footprint>Connectors_Custom:TH-M3</footprint>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="MOUNTHOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005acadca8</tstamps>
+    </comp>
+    <comp ref="MP2">
+      <value>MOUNTHOLE</value>
+      <footprint>Connectors_Custom:TH-M3</footprint>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="MOUNTHOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005acadd62</tstamps>
+    </comp>
+    <comp ref="MP3">
+      <value>MOUNTHOLE</value>
+      <footprint>Connectors_Custom:TH-M3</footprint>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="MOUNTHOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005acadcfe</tstamps>
+    </comp>
+    <comp ref="MP4">
+      <value>MOUNTHOLE</value>
+      <footprint>Connectors_Custom:TH-M3</footprint>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="MOUNTHOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005acaddad</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>Si1308EDL</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>https://www.vishay.com/doc?63399</datasheet>
+      <fields>
+        <field name="Description">mosfet, n-ch, 30V, 1.5A, 132mohm, 600mVth, SOT-323-3 (SC-70)</field>
+        <field name="Part Number">Si1308EDL-T1-GE3</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="BSS214NW" description="20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323"/>
+      <property name="Description" value="mosfet, n-ch, 30V, 1.5A, 132mohm, 600mVth, SOT-323-3 (SC-70)"/>
+      <property name="Part Number" value="Si1308EDL-T1-GE3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7166c622-1ce4-4bf8-b303-51bffa254870</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>IRLML6344</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-3</footprint>
+      <fields>
+        <field name="Description">mosfet, n-ch, 30Vds, 5A, 29mohm, 800mVth, SOT-23-3</field>
+        <field name="Part Number">IRLML6344TRPBF</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="IRLML6344" description=""/>
+      <property name="Part Number" value="IRLML6344TRPBF"/>
+      <property name="Description" value="mosfet, n-ch, 30Vds, 5A, 29mohm, 800mVth, SOT-23-3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b11e118</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE0710KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE0710KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ac858a4</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE0710KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE0710KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>191394e0-40d2-41da-80a4-fa2d3601bb6d</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE0710KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE0710KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ac858de</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE0710KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE0710KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53410679-b28b-4d2d-b1e8-8f9827b1cff1</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE0710KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE0710KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e40f906a-58d6-46c8-9c4f-f13abefa3d10</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e51ce20d-56d5-4c31-bf49-a19bb8c3c942</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70600514-a3a1-480f-81ca-a22cd47bacc1</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 100, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE07100RL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 100, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE07100RL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19df4901-2563-4afd-8b62-a0e4ac0c130f</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2409761e-9c27-4e63-aea0-56e011dba31d</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4809f27b-bac4-4cfe-bd99-d8e7ecc41f51</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>56</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 56, 0.1W, thick film, 1%, SMT, 0603 (1608)</field>
+        <field name="Part Number">RC0603FR-0756RL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RC0603FR-0756RL"/>
+      <property name="Description" value="resistor, 56, 0.1W, thick film, 1%, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9afb238-621e-4f9e-b385-ba93c0f1a860</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>56</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 56, 0.1W, thick film, 1%, SMT, 0603 (1608)</field>
+        <field name="Part Number">RC0603FR-0756RL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RC0603FR-0756RL"/>
+      <property name="Description" value="resistor, 56, 0.1W, thick film, 1%, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f91b761-a777-4d99-8a4c-25df4a168b25</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2460974-8ffd-44ca-84d2-863a4f232873</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0, 0.25W, thick film, SMT, 0603 (1608)</field>
+        <field name="Part Number">RCS06030000Z0EC</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Part Number" value="RCS06030000Z0EC"/>
+      <property name="Description" value="resistor, 0, 0.25W, thick film, SMT, 0603 (1608)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cda81626-6542-40e4-b0c4-099a17c2e57a</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE0710KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE0710KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a41441a-e959-4b00-bb4b-b28dcacdf92e</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 100, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE07100RL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 100, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE07100RL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b11e229</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 100k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE07100KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 100k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE07100KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b11e296</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>0R47</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 0.47, 0.25W, thin film, 5%, 300ppm, SMT, 0805 (2012)</field>
+        <field name="Part Number">2-2176054-4</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 0.47, 0.25W, thin film, 5%, 300ppm, SMT, 0805 (2012)"/>
+      <property name="Part Number" value="2-2176054-4"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e328172a-401d-4e00-bc54-100f51904b28</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Description">resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)</field>
+        <field name="Part Number">RT0603FRE0710KL</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="R" description=""/>
+      <property name="Description" value="resistor, 10k, 0.1W, thin film, 1%, 50ppm, SMT, 0603 (1603)"/>
+      <property name="Part Number" value="RT0603FRE0710KL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53664db4-ecd7-4857-8f90-6fafccfdc0ab</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>Switch_Custom:Panasonic_EVQPUJ_EVQPUA</footprint>
+      <fields>
+        <field name="Description">switch, momentary-off, SMT</field>
+        <field name="Part Number">EVQ-P7A01P</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Description" value="switch, momentary-off, SMT"/>
+      <property name="Part Number" value="EVQ-P7A01P"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56f7962a-e63a-4154-8fb8-7530a86d5c43</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint_2Pole</value>
+      <footprint>Connectors_Custom:TestPoint_Padx2_D2.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint_2Pole" description="2-polar test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="2-polar test point"/>
+      <property name="ki_keywords" value="point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18f7f9f3-e268-48b6-8645-955409332486</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint_2Pole</value>
+      <footprint>Connectors_Custom:TestPoint_Padx2_D2.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint_2Pole" description="2-polar test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="2-polar test point"/>
+      <property name="ki_keywords" value="point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>965dba53-0fda-4236-89ed-598179a77151</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>SI7021</value>
+      <footprint>Silabs_custom:SI7021</footprint>
+      <datasheet>https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf</datasheet>
+      <fields>
+        <field name="Description">IC, temperature and humidity sensor, SMT, DFN6_3x3</field>
+        <field name="Part Number">SI7021-A20-GM1</field>
+      </fields>
+      <libsource lib="TemperatureHumidityEPD-rescue" part="SI7021" description=""/>
+      <property name="Part Number" value="SI7021-A20-GM1"/>
+      <property name="Description" value="IC, temperature and humidity sensor, SMT, DFN6_3x3"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005ac857d8</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>MAX32660GTP</value>
+      <footprint>Package_DFN_QFN:TQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/max32660.pdf</datasheet>
+      <fields>
+        <field name="Description">IC, microcontroller, SMT, TQFN-EP-20</field>
+        <field name="Part Number">MAX32660GTP</field>
+      </fields>
+      <libsource lib="MCU_AnalogDevices_local" part="MAX32660GTP" description="Cortex-M4 Microcontroller, TQFN-20"/>
+      <property name="Part Number" value="MAX32660GTP"/>
+      <property name="Description" value="IC, microcontroller, SMT, TQFN-EP-20"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Cortex-M4 Microcontroller, TQFN-20"/>
+      <property name="ki_keywords" value="ARM 32-bit Cortex-M4 Maxim ADI Darwin"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>524e7ea6-fe65-4ac4-a81c-4e7f18a9ae7f</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>MAX20343H</value>
+      <footprint>ADI_Power:MAX20343H</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/MAX20343-MAX20344.pdf</datasheet>
+      <fields>
+        <field name="Description">power regulator, buck-boost, 1.9V-5.5Vin, 3.5W, SMT, FC2QFN-12</field>
+        <field name="Part Number">MAX20343HEFC+</field>
+      </fields>
+      <libsource lib="ADI_Power" part="MAX20343H" description=""/>
+      <property name="Description" value="power regulator, buck-boost, 1.9V-5.5Vin, 3.5W, SMT, FC2QFN-12"/>
+      <property name="Part Number" value="MAX20343HEFC+"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>575a35d9-35f8-46b6-b0a7-7182b29a0bdf</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>32.7680KHZ</value>
+      <footprint>Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm_HandSoldering</footprint>
+      <fields>
+        <field name="Description">crystal, 32.7680KHZ, 6PF, +/-20PPM, SMT, 1.6mm x 1.0mm</field>
+        <field name="Part Number">CM1610H32768DZB</field>
+      </fields>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <property name="Description" value="crystal, 32.7680KHZ, 6PF, +/-20PPM, SMT, 1.6mm x 1.0mm"/>
+      <property name="Part Number" value="CM1610H32768DZB"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TemperatureHumidityEPD.kicad_sch"/>
+      <property name="ki_description" value="Two pin crystal"/>
+      <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62e65aa5-96b2-4b24-aa06-aeb32eed6bc1</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ADI_Power" part="MAX20343H">
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/MAX20343-MAX20344.pdf</docs>
+      <fields>
+        <field name="Reference">U3</field>
+        <field name="Value">MAX20343H</field>
+        <field name="Footprint">ADI_Power:MAX20343H</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/MAX20343-MAX20344.pdf</field>
+        <field name="Part Number">MAX20343HEFC+</field>
+        <field name="Description">power regulator, buck-boost, 1.9V-5.5Vin, 3.5W, SMT, FC2QFN-12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CAP" type="input"/>
+        <pin num="2" name="FAST/RSEL" type="input"/>
+        <pin num="3" name="INGOOD" type="output"/>
+        <pin num="4" name="EN" type="input"/>
+        <pin num="5" name="PGOOD" type="output"/>
+        <pin num="6" name="OUT" type="power_out"/>
+        <pin num="7" name="OUT" type="power_out"/>
+        <pin num="8" name="HVLX" type="input"/>
+        <pin num="9" name="LVLX" type="input"/>
+        <pin num="10" name="IN" type="input"/>
+        <pin num="11" name="IN" type="input"/>
+        <pin num="12" name="GND" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint_2Pole">
+      <description>2-polar test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_2Pole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x24">
+      <description>Generic connector, single row, 01x24, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x24</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x05_Odd_Even">
+      <description>Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>https://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-x-xx-mkt.pdf</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">FTSH-105-01-L-DV-K</field>
+        <field name="Footprint">Connectors_Custom:SAMTEC_FTSH-105-01-L-DV-K</field>
+        <field name="Datasheet">https://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-x-xx-mkt.pdf</field>
+        <field name="Description">connector, 10-pin, 2x5, 0.5mm pitch, polarized, SMT</field>
+        <field name="Part Number">FTSH-105-01-L-DV-K</field>
+      </fields>
+      <pins>
+        <pin num="01" name="Pin_1" type="passive"/>
+        <pin num="02" name="Pin_2" type="passive"/>
+        <pin num="03" name="Pin_3" type="passive"/>
+        <pin num="04" name="Pin_4" type="passive"/>
+        <pin num="05" name="Pin_5" type="passive"/>
+        <pin num="06" name="Pin_6" type="passive"/>
+        <pin num="07" name="Pin_7" type="passive"/>
+        <pin num="08" name="Pin_8" type="passive"/>
+        <pin num="09" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connectors_Custom" part="Battery_Cell_Holder">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell_Holder</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+        <pin num="3" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="MBR0530">
+      <description>30V 0.5A Schottky Power Rectifier Diode, SOD-123</description>
+      <docs>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</docs>
+      <footprints>
+        <fp>D*SOD?123*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MBR0530</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_AnalogDevices_local" part="MAX32660GTP">
+      <description>Cortex-M4 Microcontroller, TQFN-20</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/max32660.pdf</docs>
+      <footprints>
+        <fp>TQFN*1EP*4x4mm*P0.5mm*EP2.7x2.7mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX32660GTP</field>
+        <field name="Footprint">Package_DFN_QFN:TQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/max32660.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P0.1" type="bidirectional"/>
+        <pin num="2" name="P0.0" type="bidirectional"/>
+        <pin num="3" name="P0.13" type="bidirectional"/>
+        <pin num="4" name="P0.12" type="bidirectional"/>
+        <pin num="5" name="~{RSTN}" type="input"/>
+        <pin num="6" name="V_{SS}" type="power_in"/>
+        <pin num="7" name="32KOUT" type="output"/>
+        <pin num="8" name="32KIN" type="input"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="VCORE" type="passive"/>
+        <pin num="11" name="P0.9" type="bidirectional"/>
+        <pin num="12" name="P0.8" type="bidirectional"/>
+        <pin num="13" name="P0.11" type="bidirectional"/>
+        <pin num="14" name="P0.10" type="bidirectional"/>
+        <pin num="15" name="P0.7" type="bidirectional"/>
+        <pin num="16" name="P0.6" type="bidirectional"/>
+        <pin num="17" name="P0.5" type="bidirectional"/>
+        <pin num="18" name="P0.4" type="bidirectional"/>
+        <pin num="19" name="P0.3" type="bidirectional"/>
+        <pin num="20" name="P0.2" type="bidirectional"/>
+        <pin num="21" name="V_{SS}" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="C">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="Conn_01x02">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="Conn_01x08">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="IRLML6344">
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLML6344</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="L_Core_Ferrite_Small">
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Core_Ferrite_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="MOUNTHOLE">
+      <fields>
+        <field name="Reference">MP</field>
+        <field name="Value">MOUNTHOLE</field>
+      </fields>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="R">
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TemperatureHumidityEPD-rescue" part="SI7021">
+      <docs>DOCUMENTATION</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SI7021</field>
+        <field name="Footprint">MODULE</field>
+        <field name="Datasheet">DOCUMENTATION</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="bidirectional"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="SCL" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="BSS214NW">
+      <description>20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323</description>
+      <docs>https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde</docs>
+      <footprints>
+        <fp>SOT?323*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS214NW</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ADI_Power">
+      <uri>C:/Users/viseli/Documents/Libraries/ADI_Power/ADI_Power.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Connectors_Custom">
+      <uri>C:/Users/viseli/Documents/Libraries/Connectors_Custom/Connectors_Custom.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+    <library logical="TemperatureHumidityEPD-rescue">
+      <uri>C:\Users\viseli\Documents\FAE\_SW Digital and MCU related\Projects\Open Source Design Translation\Temp-Humidity\TemperatureHumidityePaper_Hardware/TemperatureHumidityEPD-rescue.lib</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Transistor_FET.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J2" pin="01" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="L3" pin="1" pintype="passive"/>
+      <node ref="L4" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U3" pin="6" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U3" pin="7" pinfunction="OUT" pintype="power_out"/>
+    </net>
+    <net code="2" name="+BATT">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="BT1" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="IN" pintype="input"/>
+      <node ref="U3" pin="11" pinfunction="IN" pintype="input"/>
+    </net>
+    <net code="3" name="/BS">
+      <node ref="J4" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/EPD_BUSY">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="U2" pin="19" pinfunction="P0.3" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/EPD_DC">
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J4" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="U2" pin="20" pinfunction="P0.2" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/EPD_GND">
+      <node ref="J3" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J4" pin="17" pinfunction="Pin_17" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="7" name="/EPD_POWER">
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="P0.13" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/EPD_RST">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="P0.12" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/EPD_TSCL">
+      <node ref="J4" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="/EPD_TSDA">
+      <node ref="J4" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="/EPD_VDD">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="J4" pin="18" pinfunction="Pin_18" pintype="passive"/>
+    </net>
+    <net code="12" name="/GDR">
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/HLT_CTL">
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="14" name="/I2C0_SCL">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="SCL" pintype="bidirectional"/>
+      <node ref="U2" pin="12" pinfunction="P0.8" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/I2C0_SDA">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U2" pin="11" pinfunction="P0.9" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/MCU_RESET">
+      <node ref="J2" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="~{RSTN}" pintype="input"/>
+    </net>
+    <net code="17" name="/PREVGH">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J4" pin="21" pinfunction="Pin_21" pintype="passive"/>
+    </net>
+    <net code="18" name="/PREVGL">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J4" pin="23" pinfunction="Pin_23" pintype="passive"/>
+    </net>
+    <net code="19" name="/RESE">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+    </net>
+    <net code="20" name="/SPI0_MISO">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="P0.4" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/SPI0_MOSI">
+      <node ref="J3" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J4" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="U2" pin="17" pinfunction="P0.5" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/SPI0_SCLK">
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J4" pin="13" pinfunction="Pin_13" pintype="passive"/>
+      <node ref="U2" pin="16" pinfunction="P0.6" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/SPI0_SS">
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J4" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="P0.7" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/SWDCLK">
+      <node ref="J2" pin="04" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="P0.1" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/SWDIO">
+      <node ref="J2" pin="02" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="P0.0" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/UART1_RX">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="P0.11" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="/UART1_TX">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="P0.10" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/VCI">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="J4" pin="15" pinfunction="Pin_15" pintype="passive"/>
+      <node ref="J4" pin="16" pinfunction="Pin_16" pintype="passive"/>
+      <node ref="L3" pin="2" pintype="passive"/>
+    </net>
+    <net code="29" name="/VCOM">
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="J4" pin="24" pinfunction="Pin_24" pintype="passive"/>
+    </net>
+    <net code="30" name="/VCORE">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="VCORE" pintype="passive"/>
+    </net>
+    <net code="31" name="/VDD">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="32" name="/VGH">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="J4" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    </net>
+    <net code="33" name="/VGL">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="34" name="/VPP">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="J4" pin="19" pinfunction="Pin_19" pintype="passive"/>
+    </net>
+    <net code="35" name="/VSH">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="J4" pin="20" pinfunction="Pin_20" pintype="passive"/>
+    </net>
+    <net code="36" name="/VSL">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="J4" pin="22" pinfunction="Pin_22" pintype="passive"/>
+    </net>
+    <net code="37" name="GND">
+      <node ref="BT1" pin="3" pinfunction="-" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="03" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J2" pin="05" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="21" pinfunction="V_{SS}" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="V_{SS}" pintype="power_in"/>
+      <node ref="U3" pin="12" pinfunction="GND" pintype="power_out"/>
+    </net>
+    <net code="38" name="Net-(D1-A)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(D3-A)">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(D5-A)">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="L4" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="42" name="Net-(J2-Pin_6)">
+      <node ref="J2" pin="06" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(J2-Pin_8)">
+      <node ref="J2" pin="08" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(Q2-G)">
+      <node ref="Q2" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="45" name="Net-(R19-Pad2)">
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(U2-32KIN)">
+      <node ref="U2" pin="8" pinfunction="32KIN" pintype="input"/>
+      <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(U2-32KOUT)">
+      <node ref="U2" pin="7" pinfunction="32KOUT" pintype="output"/>
+      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="48" name="Net-(U3-CAP)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="CAP" pintype="input"/>
+    </net>
+    <net code="49" name="Net-(U3-EN)">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="50" name="Net-(U3-FAST{slash}RSEL)">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="FAST/RSEL" pintype="input"/>
+    </net>
+    <net code="51" name="Net-(U3-HVLX)">
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="HVLX" pintype="input"/>
+    </net>
+    <net code="52" name="Net-(U3-INGOOD)">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="INGOOD" pintype="output"/>
+    </net>
+    <net code="53" name="Net-(U3-LVLX)">
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="LVLX" pintype="input"/>
+    </net>
+    <net code="54" name="unconnected-(J2-Pin_7-Pad07)">
+      <node ref="J2" pin="07" pinfunction="Pin_7" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(J2-Pin_9-Pad09)">
+      <node ref="J2" pin="09" pinfunction="Pin_9" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1-NC-Pad3)">
+      <node ref="U1" pin="3" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U1-NC-Pad4)">
+      <node ref="U1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U3-PGOOD-Pad5)">
+      <node ref="U3" pin="5" pinfunction="PGOOD" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>
